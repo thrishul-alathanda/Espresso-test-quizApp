@@ -3,6 +3,7 @@ package com.gorter.myquizapp.screenTests
 import androidx.test.espresso.matcher.ViewMatchers.*
 import androidx.test.ext.junit.rules.ActivityScenarioRule
 import androidx.test.ext.junit.runners.AndroidJUnit4
+import androidx.test.filters.LargeTest
 import com.gorter.myquizapp.MainActivity
 import com.gorter.myquizapp.robots.main
 import com.gorter.myquizapp.robots.quizQuestions
@@ -17,6 +18,7 @@ class MainActivityScreenTest {
     val activityRule = ActivityScenarioRule(MainActivity::class.java)
 
     @Test
+    @LargeTest
     fun titleIsShown() {
         main {
             titleIsShown()
@@ -24,6 +26,7 @@ class MainActivityScreenTest {
     }
 
     @Test
+    @LargeTest
     fun canEnterNameAndSeeNextScreen() {
         main {
             enterName("Robert")

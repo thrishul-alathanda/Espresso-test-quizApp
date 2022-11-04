@@ -2,6 +2,7 @@ package com.gorter.myquizapp.screenTests
 
 import androidx.test.ext.junit.rules.ActivityScenarioRule
 import androidx.test.ext.junit.runners.AndroidJUnit4
+import androidx.test.filters.LargeTest
 import com.gorter.myquizapp.ResultActivity
 import com.gorter.myquizapp.robots.result
 import org.junit.Rule
@@ -15,6 +16,7 @@ class ResultScreenTest {
     val activityRule = ActivityScenarioRule(ResultActivity::class.java)
 
     @Test
+    @LargeTest
     fun titleIsShown() {
         result {
             isOnResultScreen()
