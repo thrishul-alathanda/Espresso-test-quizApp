@@ -17,7 +17,7 @@ class QuizNavigationTest {
 
     @Test
     fun canNavigateAppToResults() {
-        val name = "Robert"
+        val name = "Thrishul"
         main {
             titleIsShown()
             enterName(name)
